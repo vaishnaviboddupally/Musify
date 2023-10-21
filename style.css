@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+body{
+  background-color: antiquewhite;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav{
+  font-family: 'Playpen Sans', cursive;
+  
+
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+  height: 45px;
+  background-color: black;
+  color: white;
+  
+  align-items: center;
+  
+}
+nav ul li{
+  padding: 0 14px;
+}
+.logo img{
+  width: 35px;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size:1.1rem;
+}
+.container{
+  font-family: 'Playpen Sans', cursive;
+  min-height: 70vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 190px;
+  background-image: url("music_bg3.jpg") ;
+  background-size: cover;
+}
+
+.bottom{
+  position: sticky;
+  height: 80px;
+  
+  background-color: black;
+  bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  margin:0 18px;
+  border-radius: 15px;
+  
+}
+.icons{
+  margin-top:12px;
+  font-size:25px;
+}
+
+#myProgressBar{
+  width: 80vw;
+  cursor: pointer;
+  
+}
+.songitem-cont{
+  margin: 24px;
+}
+.songitem{
+  height: 30px;
+  display: flex;
+  background-color: white;
+  width: 430px;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songitem img{
+  width: 30px;
+  height: 30px;
+  margin: 0 22px ;
+  border-radius: 34px;
+}
+.timestamp{
+  margin: 0 22px;
+  
+}
+.timestamp i{
+  cursor: pointer;
+}
+.bts_logo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bts_logo img{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  display: flex;
+  color: white;
+}
+
+.song-playing{
+  position: absolute;
+  left:17vh;
+  font-family: 'Playpen Sans', cursive;
+  
+}
+
+.song-playing img{
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
